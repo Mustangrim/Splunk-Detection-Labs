@@ -1,4 +1,4 @@
-# Lab 01: Splunk Basics
+# 🔍 Lab 01: Splunk Basics
 
 ## Goal
 
@@ -24,7 +24,7 @@ You are a new SOC Analyst at **Buttercup Games**. The company uses Splunk for mo
 ## Splunk Interface Overview
 
 <p align="center">
-  <img src="assets/screenshots/splunk_ui_overview.png" alt="Splunk UI Overview">
+  <img src="../../assets/screenshots/splunk_ui_overview.png" alt="Splunk UI Overview">
   <br>
   <em>Splunk interface with Search Bar, Time Picker, and Sidebar</em>
 </p>
@@ -49,7 +49,7 @@ Password: rangeforce
 - This is where all search queries will be executed.
 
 <p align="center">
-  <img src="assets/screenshots/splunk_app_open.png" alt="Open Splunk App">
+  <img src="../../assets/screenshots/splunk_app_open.png" alt="Open Splunk App">
   <br>
   <em>Opening the Search & Reporting App</em>
 </p>
@@ -65,7 +65,7 @@ Key components of the Splunk search interface:
 - 📃 **Event list** (center results)
 
 <p align="center">
-  <img src="assets/screenshots/splunk_search_bar_focus.png" alt="Splunk Search Bar">
+  <img src="../../assets/screenshots/splunk_search_bar_focus.png" alt="Splunk Search Bar">
   <br>
   <em>Search bar and Time Picker UI</em>
 </p>
@@ -83,7 +83,7 @@ failed
 Make sure Time Picker is set to **All time**.
 
 <p align="center">
-  <img src="assets/screenshots/search_failed_query.png" alt="Search Query">
+  <img src="../../assets/screenshots/search_failed_query.png" alt="Search Query">
   <br>
   <em>Executing a basic search for "failed"</em>
 </p>
@@ -98,13 +98,13 @@ Observe:
 - Event field breakdown
 
 <p align="center">
-  <img src="assets/screenshots/event_timeline_top.png" alt="Event Timeline">
+  <img src="../../assets/screenshots/event_timeline_top.png" alt="Event Timeline">
   <br>
   <em>Event activity timeline above result panel</em>
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/event_field_details.png" alt="Event Fields">
+  <img src="../../assets/screenshots/event_field_details.png" alt="Event Fields">
   <br>
   <em>Fields extracted from search events</em>
 </p>
@@ -133,7 +133,7 @@ failed root
 ```
 
 <p align="center">
-  <img src="assets/screenshots/multi_term_search_result.png" alt="Multi Term Search">
+  <img src="../../assets/screenshots/multi_term_search_result.png" alt="Multi Term Search">
   <br>
   <em>Search for "failed root" returning more specific results</em>
 </p>
@@ -147,7 +147,7 @@ failed root
 ```
 
 <p align="center">
-  <img src="assets/screenshots/quoted_phrase_match.png" alt="Quoted Phrase">
+  <img src="../../assets/screenshots/quoted_phrase_match.png" alt="Quoted Phrase">
   <br>
   <em>Exact phrase search with high match count</em>
 </p>
