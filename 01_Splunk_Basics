@@ -26,7 +26,7 @@ You are a new SOC Analyst at **Buttercup Games**. The company uses Splunk for mo
 <p align="center">
   <img src="assets/screenshots/splunk_ui_overview.png" alt="Splunk UI Overview">
   <br>
-  <em>Splunk interface with Search Bar, Time Picker, and Field Sidebar</em>
+  <em>Splunk interface with Search Bar, Time Picker, and Sidebar</em>
 </p>
 
 ---
@@ -48,6 +48,12 @@ Password: rangeforce
 - Navigate to **Search & Reporting** from the left panel.
 - This is where all search queries will be executed.
 
+<p align="center">
+  <img src="assets/screenshots/splunk_app_open.png" alt="Open Splunk App">
+  <br>
+  <em>Opening the Search & Reporting App</em>
+</p>
+
 ---
 
 ### 3. Interface Tour
@@ -59,9 +65,9 @@ Key components of the Splunk search interface:
 - 📃 **Event list** (center results)
 
 <p align="center">
-  <img src="assets/screenshots/splunk_search_bar.png" alt="Splunk Search Bar">
+  <img src="assets/screenshots/splunk_search_bar_focus.png" alt="Splunk Search Bar">
   <br>
-  <em>Search bar and time picker highlighted</em>
+  <em>Search bar and Time Picker UI</em>
 </p>
 
 ---
@@ -77,24 +83,30 @@ failed
 Make sure Time Picker is set to **All time**.
 
 <p align="center">
-  <img src="assets/screenshots/search_failed_event.png" alt="Search Failed Events">
+  <img src="assets/screenshots/search_failed_query.png" alt="Search Query">
   <br>
-  <em>Search results showing failed login events</em>
+  <em>Executing a basic search for "failed"</em>
 </p>
 
 ---
 
 ### 5. Analyze Search Results
 
-Once you search for `failed`, observe the following:
+Observe:
 - Event timeline (top bar)
 - Highlighted fields: `host`, `source`, `sourcetype`
-- Sample event breakdown
+- Event field breakdown
 
 <p align="center">
-  <img src="assets/screenshots/event_analysis.png" alt="Event Field Breakdown">
+  <img src="assets/screenshots/event_timeline_top.png" alt="Event Timeline">
   <br>
-  <em>Analyzing fields in Splunk results</em>
+  <em>Event activity timeline above result panel</em>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/event_field_details.png" alt="Event Fields">
+  <br>
+  <em>Fields extracted from search events</em>
 </p>
 
 ---
@@ -114,26 +126,31 @@ Once you search for `failed`, observe the following:
 
 ### 6. Run a Multi-Term Search
 
-Add another keyword to narrow down results:
+Search using two keywords:
 
 ```spl
 failed root
 ```
 
+<p align="center">
+  <img src="assets/screenshots/multi_term_search_result.png" alt="Multi Term Search">
+  <br>
+  <em>Search for "failed root" returning more specific results</em>
+</p>
+
 ---
 
 ### 7. Run a Quoted Phrase Search
-
-Search for an exact phrase using quotes:
 
 ```spl
 "failed password for root"
 ```
 
-This will match only those events that include the **exact phrase**.
-
-**Result:**  
-📌 **7282** matching events
+<p align="center">
+  <img src="assets/screenshots/quoted_phrase_match.png" alt="Quoted Phrase">
+  <br>
+  <em>Exact phrase search with high match count</em>
+</p>
 
 ---
 
