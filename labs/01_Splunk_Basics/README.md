@@ -38,7 +38,7 @@ You are a new SOC Analyst at **Buttercup Games**. The company uses Splunk for mo
 **Credentials:**
 ```plaintext
 Username: admin
-Password: rangeforce
+Password: *******
 ```
 
 ---
